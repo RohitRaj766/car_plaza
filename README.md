@@ -10,12 +10,16 @@ This project is an AI-powered car marketplace application, designed to provide a
 - **Car Listings**: Browse and view details of available cars.
 - **Search & Filtering**: Efficiently search for cars based on various criteria.
 - **User Authentication**: Secure user login and registration powered by Clerk.
-- **Admin Powers**: (To be detailed based on implementation, e.g., managing listings, users).
-- **User Powers**: (To be detailed based on implementation, e.g., creating listings, managing saved cars, booking test drives).
+- **Admin Dashboard**: Manage car listings, user accounts, and other administrative tasks.
+
+- **User Dashboard**: 
+  - **Profile Management**: View and update user profile information.
+  - **Car Listings**: see car listings (e.g., add, edit, delete).
+  - **Test Drive Scheduling**: View and manage scheduled test drives.
+
 - **Test Drive Scheduling**: Schedule and manage test drives.
 - **AI Integration**: Utilizes Google Generative AI for enhanced functionalities (e.g., car descriptions, chatbot).
 - **Responsive Design**: Built with Tailwind CSS for a modern and adaptive user interface.
-- **Dark Mode**: Supports dark mode for improved user experience in low-light conditions.
 
 ## Tech Stack
 
@@ -36,7 +40,7 @@ Follow these instructions to set up and run the project locally.
 ### Prerequisites
 
 - Node.js (v18 or higher)
-- npm or Yarn
+- npm
 - PostgreSQL database (local or remote, e.g., Supabase)
 
 ### Installation
@@ -44,14 +48,12 @@ Follow these instructions to set up and run the project locally.
 1. Clone the repository:
    ```bash
    git clone <your-repository-url>
-   cd ai-car-marketplace
+   cd car_plaza
    ```
 
 2. Install dependencies:
    ```bash
-   npm install
-   # or
-   yarn install
+   npm install --legacy-peer-deps
    ```
 
 ### Environment Variables
