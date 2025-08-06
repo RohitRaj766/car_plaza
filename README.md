@@ -1,4 +1,63 @@
 
+# AI Car Marketplace
+
+## Overview
+
+This project is an AI-powered car marketplace application, designed to provide a seamless experience for buying and selling cars. It leverages modern web technologies and AI capabilities to offer features such as car listings, search, user authentication, and potentially AI-driven recommendations or interactions.
+
+## Features
+
+- **Car Listings**: Browse and view details of available cars.
+- **Search & Filtering**: Efficiently search for cars based on various criteria.
+- **User Authentication**: Secure user login and registration powered by Clerk.
+- **Admin Powers**: (To be detailed based on implementation, e.g., managing listings, users).
+- **User Powers**: (To be detailed based on implementation, e.g., creating listings, managing saved cars, booking test drives).
+- **Test Drive Scheduling**: Schedule and manage test drives.
+- **AI Integration**: Utilizes Google Generative AI for enhanced functionalities (e.g., car descriptions, chatbot).
+- **Responsive Design**: Built with Tailwind CSS for a modern and adaptive user interface.
+- **Dark Mode**: Supports dark mode for improved user experience in low-light conditions.
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (with Turbopack for fast development)
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS
+- **Authentication**: Clerk
+- **ORM**: Prisma
+- **Database**: PostgreSQL (managed via Supabase)
+- **AI**: Google Generative AI
+- **Database Migrations**: Prisma Migrate
+- **Deployment**: Vercel (assumed, based on Next.js)
+
+## Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or Yarn
+- PostgreSQL database (local or remote, e.g., Supabase)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-url>
+   cd ai-car-marketplace
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Environment Variables
+
+Create a `.env` file in the root of the project and add the following environment variables:
+
 DATABASE_URL=
 DIRECT_URL=
 
@@ -16,4 +75,26 @@ ARCJET_KEY=
 
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
+
+### Database Migrations
+
+Apply Prisma migrations to set up your database schema:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+### Running the Development Server
+
+Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project Structure
 
