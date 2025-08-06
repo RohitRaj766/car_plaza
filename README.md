@@ -64,14 +64,6 @@ cd car_plaza
 # Install dependencies
 npm install --legacy-peer-deps
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <your-repository-url>
-   cd car_plaza
-   ```
-
 2. Install dependencies:
    ```bash
    npm install --legacy-peer-deps
