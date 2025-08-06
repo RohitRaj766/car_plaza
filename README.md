@@ -1,47 +1,68 @@
+# 🚗 AI Car Marketplace
 
-# AI Car Marketplace
+An AI-powered web application that provides a seamless platform to **buy and sell cars**. Leveraging modern web technologies and AI integration, it offers intuitive features like car listings, advanced search, user dashboards, and smart AI interactions.
 
-## Overview
+---
 
-This project is an AI-powered car marketplace application, designed to provide a seamless experience for buying and selling cars. It leverages modern web technologies and AI capabilities to offer features such as car listings, search, user authentication, and potentially AI-driven recommendations or interactions.
+## 📌 Overview
 
-## Features
+AI Car Marketplace is built with a modern full-stack architecture using **Next.js**, **Tailwind CSS**, **Prisma**, and **Google Generative AI**. It provides both buyers and sellers with a responsive, secure, and smart car marketplace experience.
 
-- **Car Listings**: Browse and view details of available cars.
-- **Search & Filtering**: Efficiently search for cars based on various criteria.
-- **User Authentication**: Secure user login and registration powered by Clerk.
-- **Admin Dashboard**: Manage car listings, user accounts, and other administrative tasks.
+---
 
-- **User Dashboard**: 
-  - **Profile Management**: View and update user profile information.
-  - **Car Listings**: see car listings (e.g., add, edit, delete).
-  - **Test Drive Scheduling**: View and manage scheduled test drives.
+## ✨ Features
 
-- **Test Drive Scheduling**: Schedule and manage test drives.
-- **AI Integration**: Utilizes Google Generative AI for enhanced functionalities (e.g., car descriptions, chatbot).
-- **Responsive Design**: Built with Tailwind CSS for a modern and adaptive user interface.
+- **🔍 Car Listings** – Browse and view available cars with rich detail.
+- **⚙️ Search & Filtering** – Quickly find cars by brand, model, price, and more.
+- **🔐 Authentication** – Secure sign-in & sign-up using [Clerk](https://clerk.dev).
+- **👤 User Dashboard**
+  - Manage profile
+  - Add/Edit/Delete car listings
+  - Schedule test drives
+- **📊 Admin Dashboard** – Manage users, listings, and platform data.
+- **📅 Test Drive Scheduling** – Book and manage test drives seamlessly.
+- **🤖 AI Integration**
+  - Auto-generate car descriptions
+  - Integrated AI chatbot
+- **📱 Responsive Design** – Optimized for all devices using Tailwind CSS.
 
-## Tech Stack
+---
 
-- **Framework**: Next.js 15 (with Turbopack for fast development)
-- **UI Library**: React 19
-- **Styling**: Tailwind CSS
-- **Authentication**: Clerk
-- **ORM**: Prisma
-- **Database**: PostgreSQL (managed via Supabase)
-- **AI**: Google Generative AI
-- **Database Migrations**: Prisma Migrate
-- **Deployment**: Vercel (assumed, based on Next.js)
+## 🛠 Tech Stack
 
-## Getting Started
+| Category          | Technology               |
+|------------------|---------------------------|
+| **Framework**     | [Next.js 15](https://nextjs.org) (Turbopack) |
+| **Frontend**      | [React 19](https://reactjs.org) |
+| **Styling**       | [Tailwind CSS](https://tailwindcss.com) |
+| **Authentication**| [Clerk](https://clerk.dev) |
+| **Database**      | [PostgreSQL](https://www.postgresql.org) via [Supabase](https://supabase.com) |
+| **ORM**           | [Prisma](https://www.prisma.io) |
+| **AI**            | [Google Generative AI](https://ai.google/discover/generative-ai/) |
+| **Deployment**    | [Vercel](https://vercel.com) |
+| **Migrations**    | Prisma Migrate            |
 
-Follow these instructions to set up and run the project locally.
+---
 
-### Prerequisites
+## 🚀 Getting Started
 
-- Node.js (v18 or higher)
+### ✅ Prerequisites
+
+- Node.js v18 or higher
 - npm
-- PostgreSQL database (local or remote, e.g., Supabase)
+- PostgreSQL database (e.g., [Supabase](https://supabase.com))
+
+---
+
+### 📦 Installation
+
+```bash
+# Clone the repo
+git clone <your-repository-url>
+cd car_plaza
+
+# Install dependencies
+npm install --legacy-peer-deps
 
 ### Installation
 
