@@ -100,3 +100,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Structure
 
+    car_plaza/
+    ├── prisma/
+    ├── public/
+    ├── app/
+    ├── components/
+    ├── lib/
+    ├── styles/
+    ├── .env
+    ├── .env.test
+    ├── .gitignore
+    ├── next.config.js
+    ├── package.json
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    └── tsconfig.json
