@@ -93,7 +93,11 @@ export async function getDealershipInfo() {
       },
     };
   } catch (error) {
-    throw new Error("Error fetching dealership info:" + error.message);
+    console.error("Error fetching dealership info:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to fetch dealership info"
+    };
   }
 }
 
@@ -145,7 +149,11 @@ export async function saveWorkingHours(workingHours) {
       success: true,
     };
   } catch (error) {
-    throw new Error("Error saving working hours:" + error.message);
+    console.error("Error saving working hours:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to save working hours"
+    };
   }
 }
 
@@ -178,7 +186,11 @@ export async function getUsers() {
       })),
     };
   } catch (error) {
-    throw new Error("Error fetching users:" + error.message);
+    console.error("Error fetching users:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to fetch users"
+    };
   }
 }
 
@@ -210,6 +222,10 @@ export async function updateUserRole(userId, role) {
       success: true,
     };
   } catch (error) {
-    throw new Error("Error updating user role:" + error.message);
+    console.error("Error updating user role:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to update user role"
+    };
   }
 }

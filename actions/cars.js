@@ -121,8 +121,11 @@ export async function processCarImageWithAI(file) {
       };
     }
   } catch (error) {
-    console.error();
-    throw new Error("Gemini API error:" + error.message);
+    console.error("Gemini API error:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to process car image with AI"
+    };
   }
 }
 
@@ -220,7 +223,11 @@ export async function addCar({ carData, images }) {
       success: true,
     };
   } catch (error) {
-    throw new Error("Error adding car:" + error.message);
+    console.error("Error adding car:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to add car"
+    };
   }
 }
 

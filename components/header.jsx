@@ -17,8 +17,8 @@ const Header = async ({ isAdminPage = false }) => {
           <Image
             src={"/logo.png"}
             alt="Vehiql Logo"
-            width={200}
-            height={60}
+            width={300}
+            height={90}
             className="h-12 w-auto object-contain"
           />
           {isAdminPage && (

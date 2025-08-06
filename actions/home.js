@@ -175,6 +175,10 @@ export async function processImageSearch(file) {
       };
     }
   } catch (error) {
-    throw new Error("AI Search error:" + error.message);
+    console.error("AI Search error:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to process image search"
+    };
   }
 }

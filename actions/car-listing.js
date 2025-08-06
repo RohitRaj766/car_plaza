@@ -181,7 +181,11 @@ export async function getCars({
       },
     };
   } catch (error) {
-    throw new Error("Error fetching cars:" + error.message);
+    console.error("Error fetching cars:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to fetch cars"
+    };
   }
 }
 
@@ -255,7 +259,11 @@ export async function toggleSavedCar(carId) {
       message: "Car added to favorites",
     };
   } catch (error) {
-    throw new Error("Error toggling saved car:" + error.message);
+    console.error("Error toggling saved car:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to toggle saved car"
+    };
   }
 }
 
@@ -352,7 +360,11 @@ export async function getCarById(carId) {
       },
     };
   } catch (error) {
-    throw new Error("Error fetching car details:" + error.message);
+    console.error("Error fetching car details:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to fetch car details"
+    };
   }
 }
 

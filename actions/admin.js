@@ -171,7 +171,11 @@ export async function updateTestDriveStatus(bookingId, newStatus) {
       message: "Test drive status updated successfully",
     };
   } catch (error) {
-    throw new Error("Error updating test drive status:" + error.message);
+    console.error("Error updating test drive status:", error);
+    return {
+      success: false,
+      error: error.message || "Failed to update test drive status"
+    };
   }
 }
 
