@@ -172,44 +172,59 @@ export default async function Home() {
       </section>
 
       {/* FAQ Section with Accordion */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-8">
-            Frequently Asked Questions
-          </h2>
-          <Accordion type="single" collapsible className="w-full">
-            {faqItems.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
-                <AccordionContent>{faq.answer}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
+ <section className="py-12 bg-gray-50">
+  <div className="container mx-auto px-6 max-w-5xl">
+    <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-12">
+      Frequently Asked Questions
+    </h2>
+
+    <Accordion
+      type="single"
+      collapsible
+      className="w-full space-y-4 sm:p-10"
+    >
+      {faqItems.map((faq, index) => (
+        <AccordionItem
+          key={index}
+          value={`item-${index}`}
+          className="border border-gray-200 rounded-lg focus-within:ring-2 focus-within:ring-blue-500"
+        >
+          <AccordionTrigger className="flex justify-between items-center text-lg sm:text-xl font-semibold text-gray-800 px-6 py-4 hover:bg-blue-50 rounded-lg transition">
+            {faq.question}
+            {/* Add a subtle icon or arrow if your AccordionTrigger supports it */}
+          </AccordionTrigger>
+          <AccordionContent className="px-6 py-4 text-gray-600 text-base sm:text-lg leading-relaxed">
+            {faq.answer}
+          </AccordionContent>
+        </AccordionItem>
+      ))}
+    </Accordion>
+  </div>
+</section>
 
       {/* CTA Section */}
-      <section className="py-16 dotted-background text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Find Your Dream Car?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who found their perfect
-            vehicle through our platform.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" variant="secondary" asChild>
-              <Link href="/cars">View All Cars</Link>
-            </Button>
-            <SignedOut>
-              <Button size="lg" asChild>
-                <Link href="/sign-up">Sign Up Now</Link>
-              </Button>
-            </SignedOut>
-          </div>
-        </div>
-      </section>
+  <section className="py-16 dotted-background text-white">
+  <div className="container mx-auto px-6 max-w-4xl text-center">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 sm:mb-8">
+      Ready to Find Your Dream Car?
+    </h2>
+    <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+      Join thousands of satisfied customers who found their perfect
+      vehicle through our platform.
+    </p>
+    <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8">
+      <Button size="lg" variant="secondary" asChild className="w-full sm:w-auto">
+        <Link href="/cars">View All Cars</Link>
+      </Button>
+      <SignedOut>
+        <Button size="lg" asChild className="w-full sm:w-auto">
+          <Link href="/sign-up">Sign Up Now</Link>
+        </Button>
+      </SignedOut>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
