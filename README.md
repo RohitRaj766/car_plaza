@@ -1,11 +1,6 @@
 # 🚗 AI Car Marketplace
 
 An AI-powered web application that provides a seamless platform to **buy and sell cars**. Leveraging modern web technologies and AI integration, it offers intuitive features like car listings, advanced search, user dashboards, and smart AI interactions.
-
----
-
-## 📌 Overview
-
 AI Car Marketplace is built with a modern full-stack architecture using **Next.js**, **Tailwind CSS**, **Prisma**, and **Google Generative AI**. It provides both buyers and sellers with a responsive, secure, and smart car marketplace experience.
 
 ---
